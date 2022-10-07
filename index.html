@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">Box Shadow Generator</h1>
+  <div class="box-container">
+    <div class="box-data">
+    <form action="">
+      <div class="input-item">
+        <label for="size">Size</label>
+        <input class="size" type="range" min="100" max="300" value="200" name="size">
+      </div>
+      <div class="input-item">
+        <label for="radius">Border Radius</label>
+        <input class="radius" type="range" min="0" max="50" value="0" name="radius">
+      </div>
+      <div class="input-item">
+        <label for="shadow-h">Horizontal Shadow Length</label>
+        <input class="shadow-h" type="range" min="-100" max="100" name="shadow-h">
+      </div>
+      <div class="input-item">
+        <label for="shadow-v">Vertical Shadow Length</label>
+        <input class="shadow-v" type="range" min="-100" max="100" name="shadow-v">
+      </div>
+      <div class="input-item">
+        <label for="shadow-blur">Blur Radius</label>
+        <input class="shadow-blur" name="shadow-blur" type="range" min="3" max="250" value="3">
+      </div>
+      <div class="input-item">
+        <label for="shadow-spread">Spread Radius</label>
+        <input class="shadow-spread" name="shadow-spread" type="range" min="-100" max="100">
+      </div>
+      <div class="input-item">
+        <label for="">Shadow Color</label>
+        <div class="shadowColor">
+          <input class="color" type="color" name="color">
+          <label class="color-text" for="color"></label>
+        </div>
+      </div>
+    </form>
+    
+    </div>
+    <div class="box-content">
+      <div class="box">
+        <div class="box-item"></div>
+      </div>
+
+      <div class="box-generator">
+        <p>css generado</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./app.js"></script>
+</html>
